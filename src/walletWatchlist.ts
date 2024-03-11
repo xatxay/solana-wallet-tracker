@@ -33,10 +33,10 @@ export const walletWatchlists = [
     address: 'FfCP7bK7VZGqaYf8fDXvg2r5hnwh48mAFfqajX3qXHKt',
     name: 'pip 2.0',
   },
-  {
-    address: '55whLMbHRwhSf1isyhGtGYTU7KMR7o4U7eZxEXeLoeDF',
-    name: 'goo 1.0',
-  },
+  // {
+  //   address: '55whLMbHRwhSf1isyhGtGYTU7KMR7o4U7eZxEXeLoeDF',
+  //   name: 'goo 1.0',
+  // },
   {
     address: 'Bzo4ihU6ELwWdJVJV63fGr4P26t3KVUqzi78RpYs9rBg',
     name: 'el gato',
