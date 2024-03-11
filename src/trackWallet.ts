@@ -10,7 +10,12 @@ export const watchWallet = async (
   let transactionInfo = [];
   connection.onLogs(new PublicKey(wallet), async (account) => {
     console.log('not swap: ', account.signature);
-    if (account.logs.join('').includes('Swap') && account.err === null) {
+    if (
+      account.logs
+        .join('')
+        .includes('675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8') &&
+      account.err === null
+    ) {
       console.log('swap signature: ', account.signature);
       for (let i = 0; i < 30; i++) {
         console.log('trying: ', i);

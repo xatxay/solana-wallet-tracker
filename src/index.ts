@@ -13,6 +13,13 @@ const main = async (): Promise<void> => {
     `https://mainnet.helius-rpc.com/?api-key=${process.env.HELIUS_API_KEY}`,
     'confirmed',
   );
+  // const data = await connection.getParsedTransaction(
+  //   `3aebFVji4BgQbeVdW3MpsPAVV42tRaXtavKYXoiASVwo1oFdhubscnqmZRE39HuadsvQB8NWZgCC8FroSD471KHU`,
+  //   {
+  //     maxSupportedTransactionVersion: 0,
+  //   },
+  // );
+  // console.log('data: ', data);
 
   const promies = walletWatchlists.map((wallet) =>
     watchWallet(wallet.address, connection, wallet.name),

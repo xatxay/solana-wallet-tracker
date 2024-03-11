@@ -1,16 +1,16 @@
 export const walletWatchlists = [
-  { address: 'FATp77i9kge2amCEeeH2xffTPSpAxFsABSNECuoi7gq8', name: 'You' },
   {
     address: 'EUXyB91xVpAURV2Vx561q34LvEV4XgcvdkmJViKmzCcg',
     name: 'jeo boden 1.0',
   },
+  { address: 'FATp77i9kge2amCEeeH2xffTPSpAxFsABSNECuoi7gq8', name: 'You' },
   {
     address: '8X1B6AD93eQvEcTENKY6bwEoC4q5mZgcc3dn3rog5qsW',
-    name: 'jeo boden 1.0',
+    name: 'jeo boden 1.1',
   },
   {
     address: 'DDPUGVyekCLWe1NikQ26jfjAK9EkPYC9zNu84iGbHsfR',
-    name: 'jeo boden 1.0',
+    name: 'jeo boden 1.2',
   },
   {
     address: '6wWU8YRhqhDXfriLfHpdwsfejgJbgssCcUPD3bhHHdLk',
