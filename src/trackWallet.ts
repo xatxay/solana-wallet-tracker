@@ -25,14 +25,23 @@ export const watchWallet = async (
         transactionInfo = await getTransactionInfo(account.signature);
         console.log('asdasdas: ', transactionInfo);
         if (transactionInfo.length > 0) {
+          const keyword = 'swapped';
           const timestamp = new Date(transactionInfo[0].timestamp * 1000);
           const exchange = transactionInfo[0].source;
-          const description = `(${name}) ${transactionInfo[0].description}`;
+          const description = transactionInfo[0].description as string;
           const signature = transactionInfo[0].signature;
+          const descriptionText = `${name} ${description.substring(
+            description.indexOf(keyword),
+          )}`;
           const message = `time: ${timestamp.toISOString()}\nexchange: ${exchange}\ndescription: ${description}\nsignature: ${signature}`;
           console.log('transaction info: ', transactionInfo);
           console.log(message);
-          await sendDiscordWebhook(timestamp, exchange, description, signature);
+          await sendDiscordWebhook(
+            timestamp,
+            exchange,
+            descriptionText,
+            signature,
+          );
           break;
         } else {
           await new Promise((resolve) => setTimeout(resolve, 3000));
