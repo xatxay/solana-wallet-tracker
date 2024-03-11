@@ -13,7 +13,10 @@ export const watchWallet = async (
     if (
       account.logs
         .join('')
-        .includes('675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8') &&
+        .includes(
+          '675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8' ||
+            'JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4',
+        ) &&
       account.err === null
     ) {
       console.log('swap signature: ', account.signature);
