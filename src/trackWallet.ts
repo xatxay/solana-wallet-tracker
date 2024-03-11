@@ -14,7 +14,8 @@ export const watchWallet = async (
       account.logs
         .join('')
         .includes(
-          '675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8' ||
+          'Swap' ||
+            '675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8' ||
             'JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4',
         ) &&
       account.err === null
